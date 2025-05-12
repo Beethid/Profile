@@ -146,6 +146,9 @@ body {
     .app{
         width: 50%;
     }
+    .a img{
+        width: 70%;
+    }
 }
 
 #ing {
