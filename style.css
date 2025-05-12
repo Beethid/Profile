@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(11, 11, 70);
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a img {
+    margin-top: 40px;
+    width: 150px;
+    border-radius: 50%;
+    animation: spin 4s ease-in-out infinite, potong 180s linear forwards;
+    clip-path: inset(0% 0% 100% 0%);
+    perspective: 1px;
+    margin-bottom: 100px;
+    border: 0.7px solid violet;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform:rotateY(180deg)
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes potong {
+    to{
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+.text{
+    width: 400px;
+    height: 60px;
+    background-color: rgb(11, 11, 70);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    align-items: center;
+    padding:3px;  
+    position: relative;
+    cursor: pointer;
+}
+
+.text a {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.puki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text:hover{
+    background-color: transparent;
+    color: black;
+    z-index: 0;
+    border-radius: 25px;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.text::after, .text::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(-45deg, blue, violet,white);
+    top:50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 25px;
+}
+
+.text::before{
+    backdrop-filter: blur(2rem);
+}
+
+@media screen and(max-width:476px) {
+    .text{
+        width: 70%;
+    }
+    
+    .a img{
+        width: 70%;
+    }
+}
