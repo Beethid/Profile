@@ -14,7 +14,7 @@ body {
     margin-top: 40px;
     width: 150px;
     border-radius: 50%;
-    animation: spin 4s ease-in-out infinite, potong 180s linear forwards;
+    animation: spin 4s ease-in-out infinite, potong 10s linear forwards;
     clip-path: inset(0% 0% 100% 0%);
     perspective: 1px;
     margin-bottom: 100px;
