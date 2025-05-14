@@ -136,7 +136,7 @@ body {
     backdrop-filter: blur(2rem);
 }
 
-@media screen and(max-width:476px) {
+@media screen and(min-width:476px) {
     .text{
         width: 50%;
     }
@@ -148,6 +148,21 @@ body {
     }
     .a img{
         width: 50%;
+    }
+}
+
+@media screen and(min-width:768px) {
+    .text{
+        width: 70%;
+    }
+    .icon{
+        width: 70%
+    }
+    .app{
+        width: 70%;
+    }
+    .a img{
+        width: 70%;
     }
 }
 
