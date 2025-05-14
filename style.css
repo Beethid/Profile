@@ -14,7 +14,7 @@ body {
     margin-top: 40px;
     width: 150px;
     border-radius: 50%;
-    animation: spin 4s ease-in-out infinite, potong 10s linear forwards;
+    animation: spin 4s ease-in-out infinite, potong 180s linear forwards;
     clip-path: inset(0% 0% 100% 0%);
     perspective: 1px;
     margin-bottom: 100px;
@@ -136,7 +136,7 @@ body {
     backdrop-filter: blur(2rem);
 }
 
-@media screen and (min-width:476px) {
+@media screen and (max-width:476px) {
     .text{
         width: 50%;
     }
@@ -146,28 +146,10 @@ body {
     .app{
         width: 50%;
     }
-    .a img{
-        width: 50%;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .text{
-        width: 70%;
-    }
-    .icon{
-        width: 70%
-    }
-    .app{
-        width: 70%;
-    }
-    .a img{
-        width: 70%;
-    }
+    
 }
 
 #ing {
     width: 45px;
 }
-
 
