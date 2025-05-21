@@ -141,7 +141,7 @@ body {
     width: 45px;
 }
 
-@media screen and (max-width:476px){
+@media screen and (max-width:475px){
     .icn {
         width: 15px;
     }
