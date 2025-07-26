@@ -173,5 +173,69 @@ img{
     }
 }
 
-
-
+@media (max-width: 600px){
+    img{
+        width: 130px;
+    }
+    .fegra{
+        font-size: 1.7rem;
+    }
+    .moto{
+        font-size: 0.8rem;
+        font-weight: 250;
+    }
+  .link{
+    li a{
+        width: 20rem;
+        height: 3.5rem;
+        svg {
+            width: 10%;
+        }
+    }
+  }
+  .link2{
+    li a{
+        width: 20rem;
+        height: 3.5rem;
+        svg{
+            width: 10%;
+        }
+    }
+  }
+  .wa {
+    font-size: 70%;
+  }
+}
+@media (max-width: 460px){
+    img{
+        width: 110px;
+    }
+    .fegra{
+        font-size: 1.5rem;
+    }
+    .moto{
+        font-size: 0.6rem;
+        font-weight: 200;
+    }
+  .link{
+    li a{
+        width: 18rem;
+        height: 3rem;
+        svg {
+            width: 7%;
+        }
+    }
+  }
+  .link2{
+    li a{
+        width: 18rem;
+        height: 3rem;
+        svg{
+            width: 7%;
+        }
+    }
+  }
+  .wa {
+    font-size: 60%;
+  }
+}
