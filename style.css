@@ -90,6 +90,16 @@ img{
     }
 }
 
+.link:hover li a{
+    background-color:#0a0f29 ;
+
+}
+.link2:hover li a{
+    background-color:#0a0f29 ;
+
+}
+
+
 .link2 {
     margin: 1rem;
     list-style: none;
@@ -125,7 +135,7 @@ img{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: conic-gradient(from var(--angle), transparent 70%, blue) ;
+    background: conic-gradient(from var(--angle), transparent 70%, blue,transparent) ;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -140,7 +150,7 @@ img{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: conic-gradient(from var(--angle), transparent 70%, blue) ;
+    background: conic-gradient(from var(--angle), transparent 70%, blue,transparent) ;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -168,7 +178,13 @@ img{
 }
 
 .link::before{
-    filter: blur(0.5rem);
+    filter: blur(1.5rem);
+    opacity: 80%;
+
+}
+.link2::before{
+    filter: blur(1rem);
+    opacity: 80%;
 }
 
 @keyframes pudar{
@@ -249,4 +265,3 @@ img{
     font-size: 60%;
   }
 }
-
