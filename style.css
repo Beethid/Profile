@@ -64,11 +64,12 @@ img{
 }
 
 .moto {
-    font-weight: 300;
+    font-weight: 900;
 }
 
 .link {
     margin: 1rem;
+    transition: all 1s;
     list-style: none;
     position: relative;
 
@@ -76,6 +77,8 @@ img{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        transition: 100ms;
+        font-weight: 600;
         gap: 2rem;
         text-decoration: none;
         color: white;
@@ -92,13 +95,14 @@ img{
 
 .link:hover li a{
     background-color:#0a0f29 ;
-
+    color: yellowgreen;
 }
 .link2:hover li a{
     background-color:#0a0f29 ;
+    color: yellowgreen;
+
 
 }
-
 
 .link2 {
     margin: 1rem;
@@ -109,6 +113,9 @@ img{
         display: flex;
         justify-content: space-around;
         align-items: center;
+                transition: 100ms;
+
+        font-weight: 600;
         gap: 2rem;
         text-decoration: none;
         color: white;
@@ -179,12 +186,9 @@ img{
 
 .link::before{
     filter: blur(1.5rem);
-    opacity: 80%;
-
 }
 .link2::before{
     filter: blur(1rem);
-    opacity: 80%;
 }
 
 @keyframes pudar{
